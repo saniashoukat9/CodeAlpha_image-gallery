@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Image Gallery</h1>
+  <!-- Filters -->
+<div class="filters">
+  <button onclick="filterImages('all')" class="active">All</button>
+  <button onclick="filterImages('laptop')">Laptop</button>
+  <button onclick="filterImages('shoes')">Shoes</button>
+  <button onclick="filterImages('headphones')">Headphones</button>
+</div>
+  <!-- Gallery -->
+ <div class="gallery">
+
+  <div class="card laptop" onclick="openLightbox(0)">
+    <img src="images/laptop.jpg">
+    <div class="overlay">Laptop </div>
+  </div>
+
+  <div class="card shoes" onclick="openLightbox(1)">
+    <img src="images/shoes.jpg">
+    <div class="overlay">Shoes </div>
+  </div>
+
+  <div class="card headphones" onclick="openLightbox(2)">
+    <img src="images/headphones.jpg">
+    <div class="overlay">Headphone</div>
+  </div>
+
+  <div class="card laptop" onclick="openLightbox(3)">
+    <img src="images/laptop2.jpg">
+    <div class="overlay">Laptop </div>
+  </div>
+
+  <div class="card shoes" onclick="openLightbox(4)">
+    <img src="images/shoes2.jpg">
+    <div class="overlay">Shoes </div>
+  </div>
+
+  <div class="card headphones" onclick="openLightbox(5)">
+    <img src="images/headphones.jpg">
+    <div class="overlay">Headphone </div>
+  </div>
+
+  <div class="card laptop" onclick="openLightbox(6)">
+    <img src="images/laptop3.jpg">
+    <div class="overlay">Laptop </div>
+  </div>
+
+  <div class="card shoes" onclick="openLightbox(7)">
+    <img src="images/shoes3.jpg">
+    <div class="overlay">Shoes </div>
+  </div>
+   <div class="card headphones" onclick="openLightbox(5)">
+    <img src="images/headphones.jpg">
+    <div class="overlay">Headphone </div>
+  </div>
+
+  <div class="card laptop" onclick="openLightbox(6)">
+    <img src="images/laptop4.jpg">
+    <div class="overlay">Laptop </div>
+  </div>
+</div>
+
+
+  <!-- Lightbox -->
+  <div id="lightbox">
+    <span class="close" onclick="closeLightbox()">×</span>
+    <button class="prev" onclick="changeImage(-1)">❮</button>
+    <img id="lightbox-img">
+    <button class="next" onclick="changeImage(1)">❯</button>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
